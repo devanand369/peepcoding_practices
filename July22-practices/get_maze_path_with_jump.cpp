@@ -11,9 +11,6 @@ vector<string> get_maze_paths(int sr, int sc, int dr, int dc) {
         base_ans.push_back("");
         return base_ans;
     }
-    if (sr>=dr || sc>=dc){
-        return vector<string>();
-    }
     vector<string> ans;
     // Horizontal movement
     for (int jump=1;sc+jump <= dc; ++jump){
